@@ -6,6 +6,123 @@
   padding: 0 !important;
 }
 
+/*hover functionality*/
+.person-tile:hover{
+  border-color:red !important;
+}
+
+/*Designed Layouts*/
+.layout-1{
+  background-color: rgb(245,245,245);
+  border-top: 1px solid rgb(200,200,200);
+  border-bottom: 1px solid rgb(200,200,200);
+}
+
+/*javascript dependent layouts*/
+#bio-text{
+  color: red;
+}
+
+#bio-text-layout-person1{
+  /*background:url("NiceGermanScientist.jpg") no-repeat center center;*/
+  border-radius: 25px;
+  margin-left: 10vw;
+  margin-top: 20px;
+  border: 2px solid rgb(0,0,0);
+  width: 78%;
+  
+  > h2 {
+    padding: 10px 20px 10px 20px;
+    
+    /*This updates the position of the text boxes*/
+    margin-left: 5%;
+    margin-top: 10%;
+    
+    color: green;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 500px;
+    max-width: 400px;
+    vertical-align: center;
+    background-color: rgba(255,255,255,.5);
+  }
+}
+
+#bio-text-layout-person2{
+  /*background:url("NiceGermanScientist.jpg") no-repeat center center;*/
+  border-radius: 25px;
+  margin-top: 20px;
+  border: 2px solid rgb(100,100,100);
+  width: 78%;
+  
+  > h2 {
+    padding: 10px 20px 10px 20px;
+
+    /*This updates the position of the text boxes*/
+    margin-left: 40vw;
+    margin-top: 10%;
+    
+
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 500px;
+    max-width: 400px;
+    vertical-align: center;
+    background-color: rgba(255,255,255,.5);
+  }
+}
+
+/*about us page*/
+/*about-us personal tiles*/
+
+.person-row{
+  padding: 25px 0 25px 0;
+  margin-left: 10vw;
+  > h1 {
+    margin:0 auto;
+    margin-bottom: 25px;
+  }
+
+  > #person-tile-row{
+    > #person1 {
+      background: url("NiceGermanScientistSquare.jpg") no-repeat center center;
+      background-size: contain;
+    }
+
+    > #person2 {
+      background: url("MengYangChenPortrait.jpg") no-repeat center center;
+      background-size: contain;
+    }
+
+    .person-tile{
+      position: relative;
+      padding: 1vw 1vw 1vw 1vw;
+      border: 1px solid black;
+      height: 10vw;
+      width: 10vw;
+      margin-right: 1vw;
+      float: left;
+      border-radius: 5px;
+      overflow: hidden;
+
+      > p {
+        position: absolute;
+        margin: 0 0 0 0;
+        bottom: 0%;
+        width: 100%;
+        left: 0%;
+        background-color: rgba(240,240,240,0.8);
+        text-align: center;
+
+        :hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
 //Header//
 /* navbar */
 
@@ -20,10 +137,6 @@
 
 .page_list{
   margin: auto;
-}
-
-body {
-  background-color: rgb(250,250,250);
 }
 
 div {
@@ -97,16 +210,6 @@ div {
    }
 }
 
-.mainpg_c1 {
-  margin-top: 0px;
-  color: rgb(20,20,20);
-  font-family: "Verdana";
-  border-bottom: 1px solid black;
-  border-top: 0.5px solid black;
-  > div {
-  }
-}
-
 //Footer//
 #footer_creator {
   text-align:right;
@@ -134,7 +237,10 @@ div {
   color: rgb(250,250,250);
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   padding: 300px 0 0 0;
-  
+
+  > p {
+    vertical-align: middle;
+  }
 }
 
 .embedded_intro_vid {
@@ -160,14 +266,7 @@ div {
 
 //About Us Page Typography//
 
-.about_us_info > h1 {
-  text-align: left;
-  font-size: 48px;
-  padding: 0 0 0 10px;
-  font-weight: bold;
-}
-
-#persons_bio > h2 {
+.persons_bio > h2 {
   padding-left:25px;
 }
 
@@ -186,15 +285,17 @@ div {
     background-color: black;
         
   p:hover{
-    background-color:yellow;
+    /*background-color:yellow;*/
   }
 }
 
 #mission_statement_ct {
   margin: 0 0 0 0;
+  background-color: white;
+
   > div {
     font-size: 64px;
-    text-align: center;
+    text-align: left;
     padding: 100px 0 0 0;
     
   }
@@ -205,47 +306,11 @@ div {
 }
 
 #our_story_container{
-  border: 1px solid grey;
   padding: 100px 0 100px 0;
-  background-color: rgb(235,235,235);
-  text-align: center;
+  text-align: left;
   > div {
     font-size: 64px;
     margin-left: 10px;
-  }
-}
-
-#our_story_content{
-}
-
-#personal_bio_full_container{
-  text-align: left;
-  background-color: grey;
-  
-  .about_us_info {
-    padding: 0 0 10px 0 ;
-    height: 100%;
-    text-align: center;
-    
-    #persons {
-      background-color:lightgray;
-      padding-bottom: 30px;
-    }
-    .person_tile{
-      height:15vw;
-      width: 15vw;
-      position: relative;
-      background-color:lightgreen;
-      margin: 10px 3vw 0 0;
-      left: 1vw;
-      border: 1px solid black;
-    }
-    
-    #persons {
-      :hover{
-        border: 5px solid darkred;     
-      }
-    }
   }
 }
 
@@ -253,13 +318,13 @@ div {
   background-color:lightyellow;
   padding-bottom: 20px;
   
-  #persons_bio{
-    background-color: white;
+  .persons_bio{
+    /*background:url("NiceGermanScientist.jpg") no-repeat center center;*/
     border-radius: 25px;
-    margin-left: 2%;
+    margin-left: 10vw;
     margin-top: 20px;
     border: 2px solid rgb(0,0,0);
-    width: 96%;
+    width: 78%;
   }
 }
 
@@ -466,19 +531,6 @@ div {
   border: 2px solid transparent;
   border-radius: 5px;
 }
-
-// .block1{
-  // height:100px;
-  // width:100px;
-  // float:left;
-  // border: 5px solid red;
-  // background-color: pink;
-  // }
-// 
-// #main-block:nth-child(1){
-  // background-color:green;
-  // margin-left:25%;
-// }
 
 
 

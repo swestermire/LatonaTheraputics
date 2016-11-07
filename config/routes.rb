@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   match "/home" => 'static_pages#home', via: :get
 
   match "/help" => 'static_pages#help', via: :get
+  
+  match "/therapy" => 'static_pages#therapy', via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

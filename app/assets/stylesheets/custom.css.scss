@@ -6,6 +6,7 @@
   padding: 0 !important;
 }
 
+<<<<<<< HEAD
 /*hover functionality*/
 .person-tile:hover{
   border-color:red !important;
@@ -121,6 +122,15 @@
       }
     }
   }
+=======
+.on-set{
+  background-color: white;
+}
+
+.off-set{
+  margin-top: 50px;
+  margin-bottom: 50px;
+>>>>>>> CSSwork
 }
 
 //Header//
@@ -530,6 +540,140 @@ div {
   background-color: rgba(250,250,250,0.8);
   border: 2px solid transparent;
   border-radius: 5px;
+}
+
+
+/*####################################################
+THERAPY CSS
+#####################################################*/
+#how-tech-works{
+  margin-top: 25px;
+  margin-bottom: 100px;
+  height: 650px;
+  position: relative;
+  background-color: white;
+  #how-tech-works-img{
+    position: absolute;
+    left: 10%;
+    top: 10px;
+    height: 30vw;
+    width: 30vw;
+    background: url('techDiagram.png') no-repeat;
+    background-size: contain;
+  }
+
+  #how-tech-works-content{
+    position: absolute;
+    left: 50%;
+/*    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10vw 10vw 10vw 10vw;*/
+    margin-top: 8%;
+  }
+
+  h3 {
+    font-size: 42px;
+    margin-bottom: 25px;
+  }
+
+  li {
+    font-size: 32px;
+  }
+
+  a {
+    font-size: 24px;
+    margin-left: 35%;
+    text-decoration: underline;
+  }
+}
+
+#therapy-flow{
+  height: 500px;
+  position: relative;
+  margin-top: 25px;
+
+  #therapy-flow-content{
+    position: absolute;
+    margin-left: 9%;
+    margin-top: 150px;
+
+    h3{
+      font-size: 32px;
+    }
+
+  }
+
+  #therapy-flow-img{
+    position: absolute;
+    left: 45%;
+    top: 50px;
+    height: 30vw;
+    width: 50vw;
+    background: url('therapyFlow.png') no-repeat;
+    background-size: contain;
+  }
+}
+
+#CAD-section{
+  height: 700px;
+  position: relative;
+  #CAD-img{
+    position: absolute;
+    left: 10%;
+    width: 30vw;
+    height: 30vw;
+    top: 50px;
+    /*background: ;*/
+    background-color: darkgrey;
+  }
+
+  #CAD-content{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    font-size: 32px;
+    max-width: 30vw;
+  }
+}
+
+
+
+#breast-cancer-chart{
+  height: 700px;
+  position: relative;
+
+  #breast-cancer-chart-content{
+    position: absolute;
+    left: 9%;
+    top: 100px;
+    max-width: 30vw;
+
+    h3 {
+      font-size: 32px;
+    }
+
+    li {
+      font-size: 24px;
+    }
+  }
+
+  #breast-cancer-chart-img{
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    height: 35vw;
+    width: 35vw;
+    background: url('breastCancerGraph.png') no-repeat;
+    background-size: contain;
+  }
+}
+
+.section-title{
+  text-align: center;
+}
+
+#patient-benefit{
+  text-align: center;
 }
 
 

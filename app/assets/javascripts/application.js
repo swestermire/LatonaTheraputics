@@ -17,3 +17,4 @@
 //= require_tree .
 //= require owl.carousel
 // = about_us
+// = News

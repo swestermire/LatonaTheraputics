@@ -6,9 +6,9 @@
 
 function findingChildTag(parent, tag){
 	var parent_field = document.querySelector(parent);
-	var child = parent_field.getElementsByTagName(tag)
+	var child = parent_field.getElementsByTagName(tag);
 	console.log('child list is ' + child);
-	return child
+	return child;
 };
 
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	function updateBioImage(content_class,  image_url, person){
 		console.log("updateBioImage is working");
 
-		var field = document.querySelector(content_class)
+		var field = document.querySelector(content_class);
 
 		field.style.backgroundImage="url("+image_url+")";
 		field.style.height = "1000px";
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 		function updateBioInfo(person){
 			field.id = "bio-text-layout-" + person;
-			field.class = "persons_bio"
+			field.class = "persons_bio";
 		}
 
 		updateBioInfo(person);

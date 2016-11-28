@@ -923,6 +923,14 @@ Can implement nth child functionality. */
 }
 
 /*Styling for News Page*/
+.circle-offset{
+  margin-top: 10px;
+}
+
+.article-offset{
+  margin-top:120px;
+}
+
 .circle{
   border-radius: 30px;
   height: 50px;
@@ -936,13 +944,22 @@ Can implement nth child functionality. */
   border-radius: 25px;
 }
 
-.line-vert {
-  min-height: 265px;
+.line-vert-offset {
+/*   min-height: 265px; */
+  height: 50px !important;
   width: 20px;
   margin-top: 10px;
   border-radius: 25px;
   margin-left: 15px;
-  
+}
+
+.line-vert {
+/*   min-height: 265px; */
+  height: 260px !important;
+  width: 20px;
+  margin-top: 10px;
+  border-radius: 25px;
+  margin-left: 15px;
 }
 
 .purple{
@@ -951,10 +968,12 @@ Can implement nth child functionality. */
 
 .green{
   background-color: green;
+  border: 1px solid rgb(0,155,0)
 }
 
 .red{
   background-color: red;
+  border: 1px solid rgb(155,0,0)
 }
 
 
@@ -1043,7 +1062,7 @@ Can implement nth child functionality. */
 }
 
 .article-body{
-  font-size: 24px;
+  font-size: 20px;
   margin-top: -10px;
   margin-bottom: 0px;
   padding-left: 10px;
@@ -1052,4 +1071,56 @@ Can implement nth child functionality. */
 
 .news-article{
   
+}
+
+.outer-circle{
+  position: relative;
+  background-color:blue;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-left: -25px;
+}
+
+.inner-circle{
+  background-color: white;
+  height: 75px;
+  width: 75px;
+  border-radius: 40px;
+  position: absolute;
+  left: 12%;
+  top: 12%;
+}
+
+#timeline-year{
+  position: absolute;
+  left: 28%;
+  top: 15%;
+}
+
+.rocket-glyph{
+  background:url("https://www.namsral.com/img/rocket_launch.svg") center no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+  
+.timeline-date{
+  margin-top:-10px;
+  padding-left: 10px;
+}
+
+.article-icon{
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top:-10px;
+}
+
+.article-topic-type{
+  margin-left: 50px;
+  width: 50%;
+  background-color: trabsparent;
+  margin-top: -60px;
+  margin-left: 70px;
+  text-decoration: underline;
 }
